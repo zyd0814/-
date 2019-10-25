@@ -1,0 +1,57 @@
+h2{text-align: center;background-color: blue;color: white;font-size: 50px;margin:0px}
+
+.center{text-align: center;}
+.pricelist{ text-align:center; border:1px solid black;border-collapse: collapse; margin:0 auto;width: 80%;}
+
+
+body{padding: 0px;
+margin: 0px;
+}
+
+li:hover{background-color:red;}
+li:active{background-color:white;} 
+
+
+a{text-decoration: none;}
+
+
+.biaoti{font-size: 40px;}
+
+p:first-letter{
+    font-size:32px;
+}
+p{text-indent:2em;margin: 0px;}
+
+#price-table tr td:last-child::before{
+    content:'￥';
+}
+
+ul>li {
+    border-bottom:1px
+    solid black;
+}
+ul>li:last-child {
+    border-bottom: none;
+}
+
+ul{list-style-type: none;}
+
+
+img
+{
+  opacity:1.0;
+  filter:alpha(opacity=100); 
+}
+img:hover
+{
+  opacity:0.4;
+  filter:alpha(opacity=40);
+}
+#head{
+    width: 100%;
+}
+
+#left{display: inline-block;width: 29%;background-color: wheat;position: sticky;top:0px;
+    vertical-align: top;}
+#right{display: inline-block;width: 70%;background-color: hotpink;}
+
