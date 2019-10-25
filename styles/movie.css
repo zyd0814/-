@@ -1,0 +1,25 @@
+#ne{float:right;display:inline;}
+a{text-size-adjust: 200px; }
+ul {
+   
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: red;
+        height: 100%; /* 全屏高度 */
+        position: fixed; 
+        overflow: auto; /* 如果导航栏选项多，允许滚动 */
+    
+}
+li
+{
+    
+    float:left;
+}
+a
+{
+    display:block;
+    width:60px;
+}

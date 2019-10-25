@@ -1,0 +1,50 @@
+ul {
+    /*list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;*/
+
+
+
+    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: white;
+        height: 100%; /* 全屏高度 */
+        position: fixed; 
+        overflow: auto; /* 如果导航栏选项多，允许滚动 */
+    
+}
+
+
+/*a{ display:block;width:60px;}*/
+
+li {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+ 
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+li a.active {
+    background-color:green;
+    color: blue;
+}
+
+li a:hover:not(.active) {
+    background-color: grey;
+    color: pink;
+}
