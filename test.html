@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+<h1>基础实例</h1>
+<span id="demo">测试内容</span>
+<script>
+    var el=document.getElementById('demo');
+    el.innerHTML="hello world";
+    </script>
+
+
+
+<img id="myimage" src="https://p1.ssl.qhimg.com/dr/270_500_/t0110edb252a4daacf0.jpg?size=268x208" alt="" onclick="changeimage();">
+
+
+
+<script>
+        function changeimage(){
+
+
+            var el=document.getElementById("myimage");
+            if(el.src.match('270_500_')){el.src='http://i3.sinaimg.cn/edu/2012/0518/U4999P42DT20120518181024.jpg';
+                     
+            }
+            else{el.src='https://p1.ssl.qhimg.com/dr/270_500_/t0110edb252a4daacf0.jpg?size=268x208';}
+
+        }
+    
+
+
+</script>
+    
+</body>
+</html>

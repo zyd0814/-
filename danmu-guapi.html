@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<style>
+    #container {
+        position: relative;
+    }
+
+    #content {
+        position: relative;
+        border: 1px solid #ccc;
+        height: 500px;
+        width: 100%;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #footer .f-input {
+        line-height: 60px;
+    }
+
+    #footer .f-input input {
+        height: 30px;
+        line-height: 80px;
+        width: 600px;
+        text-align: center;
+    }
+
+    #footer input[type=button] {
+        background-color: lightskyblue;
+        border: 1px solid lightgreen;
+        height: 30px;
+        width: 180px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="content"></div>
+        <div id="footer">
+            <div class="f-input">
+                <input id="input" type="text" placeholder="吐槽点？">
+            </div>
+            <div class="f-buttom">
+                <input id="btn" type="button" value="发送">
+                <input id="clear" type="button" value="清屏">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 键盘事件
+            $("#input").keypress(function () {
+                let val = $("#input").val()
+                // 设置随机颜色
+                let r = Math.floor(Math.random() * 254)
+                let g = Math.floor(Math.random() * 254)
+                let b = Math.floor(Math.random() * 254)
+                // 设置随机字体大小
+                let f = Math.floor(Math.random() * 40)
+                // 设置随机高
+                let t = Math.floor(Math.random() * 450)
+                // 设置随机速度
+                let s = Math.floor(Math.random() * 5000)
+                // console.log(s)
+                let content = $("<div class='clear'>" + val + "</div>")
+                // 设置随机样式
+                content.css({
+                    "position": "absolute",
+                    "color": "rgb(" + r + "," + g + "," + b + ")",
+                    "font-size": f + "px",
+                    "top": t + "px",
+                    "right": 0
+                })
+                $("#container").append(content)
+                content.animate({
+                    left: 0
+                }, s, function () {
+                    $(this).remove()
+                })
+            });
+            // 清屏
+            $("#clear").click(function () {
+                $(".clear").empty()
+            })
+            // 发送弹幕
+            $("#btn").click(function () {
+                let val = $("#input").val()
+                if (val == "") {
+                    alert("请输入吐槽内容！")
+                } else {
+                    // 设置随机颜色
+                    let r = Math.floor(Math.random() * 254)
+                    let g = Math.floor(Math.random() * 254)
+                    let b = Math.floor(Math.random() * 254)
+                    // 设置随机字体大小
+                    let f = Math.floor(Math.random() * 40)
+                    // 设置随机高
+                    let t = Math.floor(Math.random() * 450)
+                    // 设置随机速度
+                    let s = Math.floor(Math.random() * 5000)
+                    // console.log(s)
+                    let content = $("<div class='clear'>" + val + "</div>")
+                    // 设置随机样式
+                    content.css({
+                        "position": "absolute",
+                        "color": "rgb(" + r + "," + g + "," + b + ")",
+                        "font-size": f + "px",
+                        "top": t + "px",
+                        "right": 0
+                    })
+                    $("#container").append(content)
+                    content.animate({
+                        left: 0
+                    }, s, function () {
+                        $(this).remove()
+                    })
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

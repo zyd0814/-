@@ -66,3 +66,9 @@ img:hover
     display: block;
     visibility: hidden;
 }
+
+
+li a.active {
+    background-color:green;
+    color: blue;
+}
