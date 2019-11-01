@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#head {
+    height: 50px;
+    line-height: 50px;
+    background-color:white;
+    font-size: 16px;
+}
+
+#head .a {
+    float: left;
+    padding-left: 20px;
+}
+
+#head .a img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-top: -7px;
+    padding: 0 35px;
+}
+
+#head .a a {
+    color: red;
+    text-decoration: none;
+}
+
+#head .b {
+    float: right;
+    padding-right: 32px;
+    
+}
+#head .b ul li {
+    display: inline-block;
+}
+
+#head .b ul li:hover {
+    background-color:red;   
+}
+
+
+#head .b ul li a {
+    color:black;
+    text-decoration: none;
+
+}
+.c {
+    clear: both;
+}
+
+#main {
+    /* margin: 0 auto; */
+
+
+
+
+    text-align: center;
+    
+
+}
+
+#main h2 {
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+hr {
+    margin: 0 auto;
+    width:50px;
+    border: 2px solid #333;
+}
+
+#main .main1 {
+   display: flex;
+   padding: 0 50px;
+}
+
+#main .main2 {
+    background-color:whitesmoke;
+    border:0px solid white;
+    margin-right: 20px;
+    width: 50%;
+}
+
+#main .main2:hover {
+    border: 1px solid white;
+    background-color:white;
+
+}
+
+#main .main2:last-child {
+    margin-right: 0;
+}
+
+#main .main2 img {
+    height: 350px;
+    width: 300px;
+    padding-top: 10px;
+}
+
+
+#d {
+    margin-top: 10px;
+    background-color:yellowgreen;
+    font-size: 16px;
+    
+}
+
+#d .top {
+    height: 150px;
+    line-height: 150px;
+    margin: 0 50px;
+    border-bottom: 1px solid #333;
+}
+#d .top .left {
+    margin-left: 64px;
+    float: left;
+    width: 50%;
+}
+
+#d .top .right {
+    float: left;
+}
+
+#d .top .right img {
+    width: 128px;
+    height: 128px;
+    vertical-align: middle;
+}
+
+#d .f-d {
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
+.bx-prev{ width:12px; height:26px; background:#f00;text-indent: -999999px;z-index: 999;  position: absolute; float:left; left:455px; top:110px;}
+.bx-next{ width:12px; height:26px;  background:#f00; text-indent: -999999px;z-index: 999;  position: absolute; top:110px;left:-15px;}

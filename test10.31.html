@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+
+<script>
+axios.get('http://mock-api.com/mgvr4AgQ.mock/products')
+.then(function (res){
+        console.log('res',res);
+
+
+for (var index in res.data) {
+                    $('#goods').append('<tr>'+'<td>' + res.data[index].name+'</td>' 
+                    +'<td>'+res.data[index].price+'</td>'+'<td>'+res.data[index].created_at+'</td>'+ '</tr>');
+                }
+       
+       
+
+
+
+
+       })
+       
+       
+       
+       
+       .catch(function (err){
+       console.log('err',err);
+       });
+
+
+</script>
+    
+       
+
+
+</body>
+</html>

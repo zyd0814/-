@@ -32,8 +32,77 @@
 
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
     </script>
-    <script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <!-- <script>
         $(document).ready(function () {
+
+axios.get('http://mock-api.com/mgvr4AgQ.mock/products')
+.then(function (res){
+console.log('data',res.data);
+for(var index in res.data){
+    
+    $('#goods').append('<li>' + res.data[index].name + '￥' +res.data[index].prince +'<li>');
+}
+$('#goods li').click(function(){
+    $('#message').html('删除了商品:' + $(this).text());
+    $('#message').addClass('danger');
+    $(this).remove();
+
+
+.catch(function (err){
+console.log('err',err);
+});
+
+
+}); -->
+
+
+
+
+<!-- // .then(function (res){
+//  console.log('res',res);
+// }) -->
+
+<script>
+    axios.get('http://mock-api.com/mgvr4AgQ.mock/products')
+    .then(function (res){
+            console.log('res',res);
+    
+    
+    for (var index in res.data) {
+                        $('#goods').append('<tr>'+'<td>' + res.data[index].name+'</td>' + '<td>'+res.data[index].price+'</td>'+'<td>'+res.data[index].created_at+'</td>'+ '</tr>');
+                    }
+           
+           
+    
+           })
+           
+         
+           .catch(function (err){
+           console.log('err',err);
+           });
+    
+    
+    </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
             $('#add').click(function () {
                 console.log('value:', $('#name').val());
                 $('#goods').append('<li>' + $('#name').val() + '</li>');
@@ -51,12 +120,33 @@
                 $('#message').addClass('danger');
                 $(this).remove();
             });
+
             $('#delAllBtn').click(function () {
                 $('#goods li').remove();
                 $('#message').html('删除了所有商品' + $('#name').val());
             })
-        });
+       
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
