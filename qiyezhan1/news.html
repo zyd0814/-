@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/news.css">
+</head>
+
+<body>
+
+    <table align=center width=1200 cellpadding=3 cellspacing=0 style="word-break:break-all">
+
+        <tr>
+            <td>
+
+                    <div id="tb">
+                            <img src="./tp/logo1.png" >这里写标题
+                            <a href="about.html">关于我们</a>
+                            <a href="news.html">新闻</a>
+                            <a href="index.html">首页</a>
+                    </div>
+            </td>
+        </tr>
+    </table>
+
+    <table align=center width=1200 style="word-break:break-all">
+
+        <tr>
+            <td>
+                <div id="lbb">
+
+                </div>
+
+
+                <div id="anniu">
+                    <button><p>1</p></button>
+                    <button><p>2</p></button>
+                    <button><p>3</p></button>
+                    <button><p>4</p></button>
+                </div>
+                <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+                <script>
+                    axios.get('./apidata/api1')
+                        .then(function (res) {
+                            console.log('res', res);
+                            for (var index in res.data) {
+                                $('#lbb').append('<a href="news-detail.html" style="color:#000"><div id="lb"><div><img src="' + res.data[index].img + '"></div>'
+                                    + '<div id="wz1"><p>' + res.data[index].wz1 + '</p>' + '</div>'
+                                    + '<div>发布日期：' + res.data[index].rq + '</div>'
+                                    + '<div><p>' + res.data[index].wz2 + '</p></div></div></a>'
+                                );
+                            }
+                        })
+                    function zxx(a) {
+                        axios.get('./apidata/api' + a)
+                            .then(function (res) {
+                                console.log('res', res);
+                                for (var index in res.data) {
+                                    $('#lbb').append('<div id="lb"><div><img src="' + res.data[index].img + '"></div>'
+                                        + '<div id="wz1"><p>' + res.data[index].wz1 + '</p>' + '</div>'
+                                        + '<div>发布日期：' + res.data[index].rq + '</div>'
+                                        + '<div><p>' + res.data[index].wz2 + '</p></div></div>'
+                                    );
+                                }
+                            })
+                    }
+                </script>
+                <script>
+                    $('#anniu button').click(function () {
+                        var a;
+                        a = $(this).text();
+                        //  $(this).append(a);
+                        $('#lbb ').empty();
+                        zxx(a);
+                    });
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="db">
+                    <div>
+                        <div id="dbimg">
+                            <div id="a1">
+                                <img src="tp/地图.png" alt="">
+                                <p>这里是地图</p>
+                            </div>
+                            <div id="a1">
+                                <img src="tp/邮件.png" alt="">
+                                <p>这里是邮件</p>
+                            </div>
+                            <div id="a1">
+                                <img src="tp/客服.png" alt="">
+                                <p>这里是客服</p>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <img src="tp/jpy.png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>版权所有@BT无极</h1>
+                    </div>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

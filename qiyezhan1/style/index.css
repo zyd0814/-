@@ -1,0 +1,122 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+}
+#tb{
+    width: 1200px;
+    background-color: cadetblue;
+    padding: 13px 0px 20px 0px ;
+}
+#tb img{
+    width: 40px;
+    height: 40px;
+    padding:0px 0px 0px 0px ;
+    margin: 0px 0px -10px 50px ;
+}
+#tb a{
+    float: right;
+    padding: 15px 15px 10px 15px;
+     margin: -5px 20px 0px 0px ;
+     color: #000;
+} 
+
+#tp img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+#fw{
+    width: 1200px;
+    background-color: #d9d9d9;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    
+}
+#fw img{
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+    padding:0px 0px 0px 0px ;
+}
+#fw p{
+    margin: 10px;
+    width: 280px;
+  
+}
+#a11{
+    float: left;
+    background-color: #d9d9d9;
+}
+#tdjs{
+    float: left;
+    width: 1200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px ;
+}
+#tdimg{
+    float: left;
+    widows: 50%;
+    margin: 0px 15px 0px 0px ;
+}
+#tdimg img{
+    width: 590px;
+}
+#tdjs h2{
+    text-align: center;
+}
+
+#tdjs hr{
+    width: 100px;
+    height: 3px;
+    background-color: #000;
+}
+#tdwz{
+    float: left;
+    width: 590px;
+    height: 593px;
+}
+.db{
+    float: left;
+    width: 100%;
+    background-color: green;
+    padding: 0px;
+    margin: 0px;
+
+}
+.db hr{
+    height: 4px;
+    background-color: purple;
+    padding-right: 10%;
+}
+.db img{
+    padding-right: 11.4%;
+    padding-top: 10px;
+    float: right;
+    width: 30%;
+}
+
+
+.db h1{
+    width: 78%;
+    text-align: center;
+    color:#000;
+    border-top: #000 solid 8px;
+    float: left;
+    margin-left: 10.6%;
+}
+#dbimg img{
+    width: 250px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px ;
+    padding:0px 0px 0px 0px ;
+} 
+#a1 {
+    float: left; 
+}
+#a1 p{
+    width: 120px;
+    margin: 0px 0px 0px 80px ;
+}

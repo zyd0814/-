@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.tb{ 
+    border: 3px solid black;
+    font-size: 23px;
+    background-color: #ffadd2;
+    /* padding: 15px 90px; */
+    padding: 8px 10.6%;
+    overflow: hidden;
+    
+}
+.tb img{
+    width: 28px;
+    height: 28px;
+   z-index: 9999;
+}
+.tb a{
+    float: right;
+    font-size: 13px;
+    padding: 5px 5px;
+}
+.tb a:hover{
+    background-color: #eb2f96;
+    color: #000;
+}
+.xhdy{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+.xhdy hr{
+    width: 100px;
+    height: 3px;
+    background-color: purple;
+}
+.zj{
+    
+    text-align: center;
+    float: left;
+    padding: 8px 10%;
+}
+.dy{
+    float: left;
+    background-color: #e8e8e8;
+    width: 22.8%;
+    margin: 1%;
+    padding: 0px;
+    filter: alpha(opacity=100);
+
+}
+.dy:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=40);
+    border: 1px solid #000;
+}
+.zj img {
+    width: 80%;
+}
+.db{
+    float: left;
+    width: 100%;
+    background-color: peachpuff;
+    padding: 0px;
+    margin: 0px;
+
+}
+.db hr{
+    height: 4px;
+    background-color: purple;
+    padding-right: 10%;
+}
+.db img{
+    padding-right: 11.4%;
+    padding-top: 10px;
+    float: right;
+    width: 15%;
+}
+.db p{
+    padding-left:10.8%;
+    float: left;
+    width:60% ;
+    text-indent: 2em;
+}
+
+.db h1{
+    width: 78%;
+    text-align: center;
+    color:#000;
+    border-top: #000 solid 8px;
+    float: left;
+    margin-left: 10.6%;
+
+
+}

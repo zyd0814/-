@@ -1,0 +1,83 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    text-align: center;
+}
+#tb{
+    width: 1200px;
+    background-color: cadetblue;
+    padding: 13px 0px 20px 0px ;
+}
+#tb img{
+    width: 40px;
+    height: 40px;
+    padding:0px 0px 0px 0px ;
+    margin: 0px 0px -10px 50px ;
+}
+#tb a{
+    float: right;
+    padding: 15px 15px 10px 15px;
+     margin: -5px 20px 0px 0px ;
+     color: #000;
+} 
+
+#tp img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.db{
+    float: left;
+    width: 100%;
+    background-color: peachpuff;
+    padding: 0px;
+    margin: 0px;
+
+}
+.db hr{
+    height: 4px;
+    background-color: purple;
+    padding-right: 10%;
+}
+.db img{
+    padding-right: 11.4%;
+    padding-top: 15px;
+    float: right;
+    width: 15%;
+}
+.db h1{
+    width: 78%;
+    text-align: center;
+    color:#000;
+    border-top: #000 solid 8px;
+    float: left;
+    margin-left: 10.6%;
+}
+#dbimg img{
+    width: 250px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px ;
+    padding:0px 0px 0px 0px ;
+} 
+#a1 {
+    float: left; 
+}
+#a1 p{
+    width: 80px;
+    margin: 0px 0px 0px 100px ;
+}
+#zj{
+    float: left;
+}
+
+#zj img {
+    float: left;
+    margin: 0px 0px 0px 250px;
+}
+#zj p{
+    float: left;
+}
