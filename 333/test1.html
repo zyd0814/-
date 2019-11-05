@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+</div>
+
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" ></script>
+
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+    <!-- babel是解析JSX必备的库 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel">
+
+ReactDOM.render(<h1>hello world</h1>,document.getElementById('container')
+
+)
+</script>
+
+<script>
+const name ='josh perez';
+const element =<h1>hello,{name}</h1>;
+ReactDOM.render(element,document.getElementById('root'));
+</script>
+
+<script>
+function formatName(user){
+    return user.firstName + ' ' +user.lastName;
+}
+
+const user ={
+    firstName:'harper',
+    lastName:'perez'
+};
+
+const element=(
+    <h1>hello,{formatName(user)}!
+    </h1>
+);
+
+
+ReactDOM.render(element,
+document.getElementById('root')
+
+);
+
+</script>
+
+
+
+
+</body>
+</html>
